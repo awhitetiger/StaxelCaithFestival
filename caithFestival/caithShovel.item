@@ -1,0 +1,28 @@
+{
+  "categories": [
+    "shovel",
+    "dig",
+    "mods"
+  ],
+  "code": "mods.caithShovel",
+  "icon": "mods/caithFestival/caithShovel.qb",
+  "iconScale": 0.5,
+  "inHand": "mods/caithFestival/caithShovel.qb",
+  "inHandRotation": {
+    "x": 0.0,
+    "y": 1.5399999618530273,
+    "z": -1.5399999618530273
+  },
+  "kind": "staxel.item.Shovel",
+  "pricing": {
+    "sellPrice": 10.0,
+    "value": 10.0
+  },
+  "searchable": false,
+  "usageOffset": {
+    "x": 0.0,
+    "y": -0.800000011920929,
+    "z": 0.0
+  },
+  "useBoxCollider": true
+}

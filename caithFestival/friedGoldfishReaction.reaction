@@ -1,0 +1,19 @@
+{
+  "code": "mods.friedGoldfishReaction",
+  "duration": 3,
+  "effect": "staxel.effect.cooking.Fry",
+  "effectTrigger": "staxel.effect.DockItem",
+  "processDrawable": "veggies",
+  "reagents": [
+    {
+      "code": "staxel.item.gatherable.Goldfish"
+    }
+  ],
+  "recipeStep": "fry",
+  "results": [
+    {
+      "code": "mods.friedGoldfish"
+    }
+  ],
+  "triggerDurationCraftManually": true
+}

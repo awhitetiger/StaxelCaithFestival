@@ -1,0 +1,31 @@
+{
+  "__inherits": "staxel/crafting/recipes/cookingRecipe.config",
+  "categories": [
+    "recipe",
+    "fish",
+    "mods"
+  ],
+  "code": "mods.friedGoldfishRecipe",
+  "grouping": "",
+  "inHandRotation": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ingredients": [],
+  "pricing": {
+    "sellPrice": 10.0,
+    "value": 10.0
+  },
+  "result": {
+    "code": "mods.friedGoldfish",
+    "item": {
+      "code": "mods.friedGoldfish"
+    }
+  },
+  "searchable": false,
+  "steps": [
+    "mods.friedGoldfishReaction"
+  ],
+  "type": "Crafting"
+}

@@ -1,0 +1,112 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "<<lockPlayerInConversation>>\n<<typewriterMode on>>\nNyaa~ Hi there!! #line:10000100\n<<if $met_player != 1>>\n[[What's going on Riah? |FestivalExplanation]] #line:10000200\n[[Actually, never mind. |End]] #line:10000300\n<<else>>\n[[I've got some stuff to donate! |DonateItems]] #line:10000400\n[[Actually, never mind. |End]] #line:10000500\n<<endif>>",
+		"position": {
+			"x": 126,
+			"y": 93
+		},
+		"colorID": 0
+	},
+	{
+		"title": "End",
+		"tags": "",
+		"body": "<<set $met_player = 1>>\r\n<<typewriterMode off True True>>\r\n<<releasePlayerFromConversation>>",
+		"position": {
+			"x": 130,
+			"y": 455
+		},
+		"colorID": 0
+	},
+	{
+		"title": "FestivalExplanation",
+		"tags": "",
+		"body": "I'm trying to start my own festival, the Caith Festival Myaa~! #line:10000600\nHowever Max won't give me a permit for it, he says the \"mask a raid\" is already happening soon... #line:10000700\nWhat ever that is... #line:10000800\nI just want a day where we can respect the close ancestors or caiths, #line:10000900\nCats!!! #line:10001000\nBut no one will celebrate with me... #line:10001100\n[[I'll celebrate with you! |TellHelp]] #line:10001200\n[[Sorry to hear that, bye. |End]] #line:10001300",
+		"position": {
+			"x": 455,
+			"y": 89
+		},
+		"colorID": 0
+	},
+	{
+		"title": "AskHelp",
+		"tags": "",
+		"body": "Celebrate? #line:10001400\n... #line:10001500\n... #line:10001600\nI didn't think we'd get this far... #line:10001700\n... #line:10001800\nOH! I know! #line:10001900\nBring me 10 milk or 10 cat food! I'll donate it to needy cats around the town! #line:10002000\n[[Okay, I'll bring anything by that I find! |End]] #line:10002100",
+		"position": {
+			"x": 975,
+			"y": 88
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DonateItems",
+		"tags": "",
+		"body": "<<branchPlayerHasItem staxel.tileObject.festival.NekoShrine AskNeko>>\nNyaaa!!! Great! What would you like to give? #line:10002200\n[[I've got some Milk. |DonateMilk]] #line:10002300\n[[I've got some Food. |DonateFood]] #line:10002400\n[[Actually, never mind. |End]] #line:10002500",
+		"position": {
+			"x": 693,
+			"y": 327
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DonateMilk",
+		"tags": "",
+		"body": "<<BranchPlayerDoesntHaveEnoughOfItem staxel.item.crafting.Milk 10 EndItem404>>\nThanks for the Donation! #line:10002600\n<<removePlayerItem staxel.item.crafting.Milk 10>>\nTake this as a gift for your donation! #line:10002610\n<<giveItemToPlayer tilePlacer mods.caithPainting 1>>\n[[End]]",
+		"position": {
+			"x": 428,
+			"y": 615
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DonateFood",
+		"tags": "",
+		"body": "<<BranchPlayerDoesntHaveEnoughOfItem staxel.item.pets.PetFood 10 EndItem404>>\nThanks for the Donation! #line:10002700\n<<removePlayerItem staxel.item.pets.PetFood 10>>\nTake this as a gift for your donation! #line:10002710\n<<giveItemToPlayer item mods.friedGoldfish 1>>\n<<giveItemToPlayer recipe mods.friedGoldfishRecipe 1>>\n[[End]]",
+		"position": {
+			"x": 744,
+			"y": 613
+		},
+		"colorID": 0
+	},
+	{
+		"title": "EndItem404",
+		"tags": "",
+		"body": "Are you sure? Try checking again if you have that item. Remember, you need 10.#line:10002800\n[[End]]\n",
+		"position": {
+			"x": 129,
+			"y": 676
+		},
+		"colorID": 0
+	},
+	{
+		"title": "AskNeko",
+		"tags": "",
+		"body": "Nyaaa!!! Woah!!! Is that a cat shrine?!? #line:10002900\nThat's like super rare around these parts! #line:10003000\nWe could use it as a centerpiece for the festival! #line:10003100\nNyaa!! Would you like to donate it??? #line:10003200\n[[Sure, take it. |DonateNeko]] #line:10003300\n[[I'm sorry I can't |End]] #line:10003400",
+		"position": {
+			"x": 1068,
+			"y": 344
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DonateNeko",
+		"tags": "",
+		"body": "Nyaaa! Thank you so much! The Caith Festival will never forget you!!! #line:10003500\nTake this as a gift. #line:10003600\n<<removePlayerItem staxel.tileObject.festival.NekoShrine>>\n<<giveItemToPlayerIfDoesntHave item mods.caithShovel 1>>\n[[End]]",
+		"position": {
+			"x": 1061,
+			"y": 617
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TellHelp",
+		"tags": "",
+		"body": "Really?! You will?? Thank you so much! #line:10003700\nOkay awesome! We've got this festival rolling. #line:10003800\nThe Caith Festival is here!! #line:10003900\n[[How should we celebrate? |AskHelp]] #line:10004000\n[[See ya. |End]] #line:10004100",
+		"position": {
+			"x": 702,
+			"y": 88
+		},
+		"colorID": 0
+	}
+]

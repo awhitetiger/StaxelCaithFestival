@@ -1,0 +1,30 @@
+{
+  "categories": [
+    "market",
+    "fish"
+  ],
+  "code": "mods.friedGoldfish",
+  "consumable": {
+    "colour": "FFF3D377",
+    "particles": "staxel.particle.item.Drink",
+    "sound": "staxel.sound.Eat"
+  },
+  "eatTime": 3,
+  "icon": "mods/caithFestival/friedGoldfish.qb",
+  "inHand": "mods/caithFestival/friedGoldfish.qb",
+  "inHandRotation": {
+    "x": 0.0,
+    "y": 1.5399999618530273,
+    "z": -1.5399999618530273
+  },
+  "kind": "staxel.item.CraftItem",
+  "pricing": {
+    "sellPrice": 75.0,
+    "value": 125.0
+  },
+  "usageOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}

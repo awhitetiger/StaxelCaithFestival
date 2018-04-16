@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "<<lockPlayerInConversation>>\n<<typewriterMode on>>\nHi there, how's it going? #line:10000100\n[[Why aren't there any festivals in Spring? |AskFest]] #line:10000200\n[[I'm doing good. |End]] #line:10000300",
+		"position": {
+			"x": 142,
+			"y": 111
+		},
+		"colorID": 0
+	},
+	{
+		"title": "End",
+		"tags": "",
+		"body": "<<typewriterMode off True True>>\r\n<<releasePlayerFromConversation>>",
+		"position": {
+			"x": 142,
+			"y": 453
+		},
+		"colorID": 0
+	},
+	{
+		"title": "AskFest",
+		"tags": "",
+		"body": "Funny you should ask that, #line:10000400\nThere actually is a new festival coming soon. #line:10000500\nThe Fey Masquerade! #line:10000600\nHowever it may not be here for a couple years. #line:10000700\nIf you're looking for something to do, talk to Riah. #line:10000800\nShe recently requested a permit from me for her own festival. #line:10000900\nHowever, I denied her because she had no direction for the event. #line:10001000\n[[End]]",
+		"position": {
+			"x": 455,
+			"y": 110
+		},
+		"colorID": 0
+	}
+]

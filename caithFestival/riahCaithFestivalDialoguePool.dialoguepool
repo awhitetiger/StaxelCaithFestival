@@ -1,0 +1,7 @@
+{
+  "code": "mods.riahCaithFestivalDialoguePool",
+  "dialogue": [
+    "mods.riahCaithFestivalDialogue"
+  ],
+  "type": "Festival"
+}

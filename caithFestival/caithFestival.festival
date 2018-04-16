@@ -1,0 +1,29 @@
+{
+  "code": "mods.caithFestival",
+  "end": 6,
+  "generalVillagerOverride": {
+    "suppressJob": true,
+    "suppressPersonality": true,
+    "villager": ""
+  },
+  "season": "Spring",
+  "start": 5,
+  "villagerOverrides": [
+    {
+      "festivalDialoguePools": [
+        "mods.riahCaithFestivalDialoguePool"
+      ],
+      "suppressJob": true,
+      "suppressPersonality": true,
+      "villager": "Riah"
+    },
+    {
+      "festivalDialoguePools": [
+        "mods.maxCaithFestivalDialoguePool"
+      ],
+      "suppressJob": true,
+      "suppressPersonality": true,
+      "villager": "Maximilian"
+    }
+  ]
+}

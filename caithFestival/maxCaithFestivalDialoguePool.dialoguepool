@@ -1,0 +1,7 @@
+{
+  "code": "mods.maxCaithFestivalDialoguePool",
+  "dialogue": [
+    "mods.maxCaithFestivalDialogue"
+  ],
+  "type": "Festival"
+}
